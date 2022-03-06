@@ -1,0 +1,51 @@
+name: the_three_deserteers
+description: The Three Deserteers is a fun slide puzzle game built by team Nisa for the flutter puzzle hack
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.4
+  equatable: ^2.0.3
+  bloc: ^8.0.2
+  flutter_bloc: ^8.0.1
+  rive: ^0.8.1
+  animated_text_kit: ^4.2.1
+  state_groups: ^0.1.5
+  eval_ex: ^1.1.6
+  confetti: ^0.6.0
+  just_audio: ^0.9.20
+  universal_platform: ^1.0.0+1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/audio/
+    - assets/images/
+    - assets/animations/
+    - assets/wafflesam/
+  
+  fonts:
+    - family: Mali
+      fonts:
+        - asset: assets/fonts/Mali/Mali-Bold.ttf
+          weight: 700 
+        - asset: assets/fonts/Mali/Mali-SemiBold.ttf
+          weight: 500
+        - asset: assets/fonts/Mali/Mali-Medium.ttf
+          weight: 300
+        - asset: assets/fonts/Mali/Mali-Regular.ttf
+          weight: 100
+    - family: Bangers
+      fonts:
+        - asset: assets/fonts/Bangers/Bangers-Regular.ttf
+      
