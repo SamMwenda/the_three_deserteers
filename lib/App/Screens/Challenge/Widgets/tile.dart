@@ -90,7 +90,7 @@ class TileState extends State<Tile> with SingleTickerProviderStateMixin {
   }
 
   String _tileItem(String text) {
-    String dir = 'images';
+    String dir = 'assets/images';
 
     if (text == '0') {
       return '$dir/0.png';

@@ -85,7 +85,7 @@ class _RiveCharacterButtonState extends State<RiveCharacterButton>
                               opacity: animationController
                                   .drive(CurveTween(curve: Curves.easeOut)),
                               child: RiveAnimation.asset(
-                                  'animations/play_button.riv',
+                                  'assets/animations/play_button.riv',
                                   animations: const ["wafflesam"],
                                   placeHolder: Center(
                                       child: CircularProgressIndicator(
@@ -97,7 +97,7 @@ class _RiveCharacterButtonState extends State<RiveCharacterButton>
                               opacity: animationController
                                   .drive(CurveTween(curve: Curves.easeOut)),
                               child: RiveAnimation.asset(
-                                  'animations/play_button.riv',
+                                  'assets/animations/play_button.riv',
                                   animations: const ["shakyvi"],
                                   placeHolder: Center(
                                       child: Center(
@@ -112,7 +112,7 @@ class _RiveCharacterButtonState extends State<RiveCharacterButton>
                               opacity: animationController
                                   .drive(CurveTween(curve: Curves.easeOut)),
                               child: RiveAnimation.asset(
-                                  'animations/play_button.riv',
+                                  'assets/animations/play_button.riv',
                                   animations: const ["dize"],
                                   placeHolder: Center(
                                       child: CircularProgressIndicator(

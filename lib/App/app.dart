@@ -11,7 +11,6 @@ import 'package:http/http.dart' as http;
 import 'package:universal_platform/universal_platform.dart';
 
 export 'Screens/Homepage/homepage.dart';
-export 'Screens/Challenge/challenge.dart';
 export 'Screens/About/about.dart';
 export 'Screens/Challenge/Widgets/widgets.dart';
 
@@ -46,12 +45,11 @@ class _AppState extends State<App> {
 
     _timer = Timer(const Duration(milliseconds: 20), () {
       precacheImage(
-          Image.asset('images/characters/waffle_sam.png').image, context);
+          Image.asset('assets/images/characters/waffle_sam.png').image, context);
       precacheImage(
-          Image.asset('images/characters/cup_dize.png').image, context);
+          Image.asset('assets/images/characters/cup_dize.png').image, context);
       precacheImage(
-          Image.asset('images/characters/shaky_vi.png').image, context);
-      precacheImage(Image.asset('images/puzzle_success.png').image, context);
+          Image.asset('assets/images/characters/shaky_vi.png').image, context);
       for (final audioAsset in audioAssets) {
         prefetchToMemory(audioAsset);
       }

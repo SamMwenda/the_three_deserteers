@@ -24,11 +24,11 @@ class _ChallengeRiveAnimationState extends State<ChallengeRiveAnimation> {
   void initState() {
     super.initState();
     if (widget.theme == 0) {
-      asset = 'animations/waffle_sam_convo.riv';
+      asset = 'assets/animations/waffle_sam_convo.riv';
     } else if (widget.theme == 1) {
-      asset = 'animations/shaky_vi_convo.riv';
+      asset = 'assets/animations/shaky_vi_convo.riv';
     } else if (widget.theme == 2) {
-      asset = 'animations/cup_dize_convo.riv';
+      asset = 'assets/animations/cup_dize_convo.riv';
       print(widget.animation);
     }
   }

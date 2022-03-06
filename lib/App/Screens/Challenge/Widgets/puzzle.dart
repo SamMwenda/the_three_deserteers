@@ -510,11 +510,11 @@ class _ChallengeDetailState extends SyncState<int, ChallengeDetail> {
     );
     var _characterAnimation = Builder(builder: (context) {
       if (themeState.theme.character == 0) {
-        asset = "animations/waffle_sam.riv";
+        asset = "assets/animations/waffle_sam.riv";
       } else if (themeState.theme.character == 1) {
-        asset = "animations/shaky_vi.riv";
+        asset = "assets/animations/shaky_vi.riv";
       } else if (themeState.theme.character == 2) {
-        asset = "animations/cup_dize.riv";
+        asset = "assets/animations/cup_dize.riv";
       }
       return SizedBox(
         height: ScreenSize.height(200, context: context),
@@ -626,17 +626,17 @@ class _ChallengeDetailState extends SyncState<int, ChallengeDetail> {
           children: [
             Row(
               children: [
-                _buttonImage("new_problem", "images/new_problem.png"),
+                _buttonImage("new_problem", "assets/images/new_problem.png"),
                 Builder(builder: (context) {
                   if (!showTileForVi &&
                       (themeState.theme.character == 0 ||
                           themeState.theme.character == 2)) {
-                    return _buttonImage("tile_order", "images/tile_order.png");
+                    return _buttonImage("tile_order", "assets/images/tile_order.png");
                   } else if (showTileForVi) {
                     return _buttonImage(
-                        "tile_order", "images/btn_expression.png");
+                        "tile_order", "assets/images/btn_expression.png");
                   } else {
-                    return _buttonImage("tile_order", "images/tile_order.png");
+                    return _buttonImage("tile_order", "assets/images/tile_order.png");
                   }
                 }),
               ],
@@ -666,11 +666,11 @@ class _ChallengeDetailState extends SyncState<int, ChallengeDetail> {
                   builder: (context) {
                     String dir = '';
                     if (themeState.theme.character == 0) {
-                      dir = 'wafflesam';
+                      dir = 'assets/wafflesam';
                     } else if (themeState.theme.character == 1) {
-                      dir = 'shakyvi';
+                      dir = 'assets/shakyvi';
                     } else if (themeState.theme.character == 2) {
-                      dir = 'cupdize';
+                      dir = 'assets/cupdize';
                     }
                     return AnimatedContainer(
                       height: ScreenSize.height(height, context: context),
