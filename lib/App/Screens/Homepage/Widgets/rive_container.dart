@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rive/rive.dart';
@@ -45,7 +44,6 @@ class _RiveCharacterButtonState extends State<RiveCharacterButton>
 
   @override
   Widget build(BuildContext context) {
-    String animation = '';
     return Align(
       alignment: Alignment.centerRight,
       child: Padding(

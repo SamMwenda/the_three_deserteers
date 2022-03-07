@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:the_three_deserteers/App/app.dart';
 import 'package:the_three_deserteers/BLoc/bloc.dart';
 import 'package:the_three_deserteers/Helpers/screensize.dart';
 import 'package:the_three_deserteers/Typography/textstyles.dart';
-import 'package:the_three_deserteers/Values/strings.dart';
 
 class Header2 extends StatefulWidget {
   const Header2({Key? key}) : super(key: key);
@@ -51,7 +49,7 @@ class _Header2State extends State<Header2> {
                       Navigator.of(context).pop();
                   
                   },
-                  child: Text(AppStrings.appName,
+                  child: Text("The Mαth∫etΣs",
                       style: AppTextStyles.bangersRegular(
                           context, themeState.theme.foregoundColor,
                           active: font1)),
@@ -63,7 +61,7 @@ class _Header2State extends State<Header2> {
                         .add(const PageChanged(pageIndex: 1));
                     Navigator.pushNamed(context, "/about");
                   },
-                  child: Text(AppStrings.about,
+                  child: Text("About",
                       style: AppTextStyles.maliBold(
                           context, themeState.theme.foregoundColor,
                           active: font2)),

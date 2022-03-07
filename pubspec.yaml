@@ -31,8 +31,11 @@ flutter:
   assets:
     - assets/audio/
     - assets/images/
+    - assets/images/characters/
     - assets/animations/
     - assets/wafflesam/
+    - assets/cupdize/
+    - assets/shakyvi/
   
   fonts:
     - family: Mali

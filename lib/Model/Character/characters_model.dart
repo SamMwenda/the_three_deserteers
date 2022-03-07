@@ -26,33 +26,26 @@ List<CharacterModel> listOfCharacters = [
       title: "Waffle Sam",
       alias: "(Big pyhzzle)",
       description:
-          "Fascinating guy, Who joins a math team and hates math, well this guy. His hate for math can be seen in his reluctance to generate new problems, depending on his mood he might cooperate or give you some bad attitude. He gets confused when questioned about order, what can we say Big pyhzzle doesn't like rules. When it comes to points, he is the most generous use him if you want to get on top of that leaderboard.  ",
-      animation: "animations/waffle_sam.riv",
+          "We are almost speechless on this one, The attitude, let us not make him seem so bad though he's a good waffle. He doesn’t have the best social skills but he doesn’t complicate the game. ‘Big pyhzzle only does what Big pyhzzle wants to do’. Well, that is free will for you. Good luck with this one.\n\nNote: To win just arrange the equation to return the value of x",
+      animation: "assets/animations/waffle_sam.riv",
       color: AppColors.foregroundColor1,
-      image: "images/characters/waffle_sam.png"),
+      image: "assets/images/characters/waffle_sam.png"),
   CharacterModel(
       index: 1,
       title: "Shaky Vi",
       alias: "(The Denominator)",
       description:
-          """Careful with this one, she is as ruthless as she is charming. It is believed
-the Destroyer has never been beaten. Legend has it a key was stolen from
-her once when she was by her lover's side. Sadly for the victor, he faced
-shiva’s lover next. You know what they say about tales... So remember
-this one.""",
-      animation: "animations/shaky_vi.riv",
+          "The 4 time MVP of the Sweet-Tooth math jam lives up to her name with her consistent domination of her opponents. If you are searching for a challenge then she is the perfect partner.\n\nNote: Using Shaky Vi requires you to return the value of x and positions tiles correctly. Use the tile order to confirm if a tile is in its correct position",
+      animation: "assets/animations/shaky_vi.riv",
       color: AppColors.foregroundColor2,
-      image: "images/characters/shaky_vi.png"),
+      image: "assets/images/characters/shaky_vi.png"),
   CharacterModel(
       index: 2,
       title: "Cup Dize",
       alias: "(Pro Tractor)",
       description:
-          """Not much is known about the puzzle master other than he poses the hardest
-slide puzzle known, shuffled by his great friend the Waffle Sam. Other than his 
-mysterious nature Cup Dize is a ruthless deserteer you just don’t want to 
-challenge.""",
-      animation: "animations/cup_dize.riv",
+          "The sweetest cupcake you might have, Cup Dize is just too sweet. He has won the High-Carbs award two consecutive times. If you want to control what equation you get to do then he is your perfect buddy. Life shouldn't be so difficult right? Well, you certainly do live by his code if you believe this.\n\nNote: To win just arrange the equation to return the value of x",
+      animation: "assets/animations/cup_dize.riv",
       color: AppColors.foregroundColor3,
-      image: "images/characters/cup_dize.png")
+      image: "assets/images/characters/cup_dize.png")
 ];

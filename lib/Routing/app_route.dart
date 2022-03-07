@@ -13,7 +13,7 @@ class AppRoute {
         return FadeRoute(page: const AboutPage());
 
         case '/challenge':
-        return FadeRoute(page: const ChallengeDetail());
+        return FadeRoute(page: const Puzzle());
 
 
       

@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
@@ -157,8 +155,8 @@ class TileState extends State<Tile> with SingleTickerProviderStateMixin {
                             height: widget.size + 50)),
                   ),
                   onTap: () {
+                    _audioPlayer?.replay();
                     mainGroup.notifyAll(widget.num);
-                    unawaited(_audioPlayer?.play());
                     setState(() {});
                   },
                 ),

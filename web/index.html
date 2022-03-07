@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
+<style>
+  body {
+    overflow: hidden;
+    vertical-align: middle;
+    animation-name: backgroundColorPalette;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+  }
 
+  @keyframes backgroundColorPalette {
+    0% {
+      background: #897E78;
+    }
+
+
+    50% {
+      background: #5A4144;
+    }
+
+    100% {
+      background: #C2AB8E;
+    }
+
+  }
+</style>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
@@ -25,7 +40,7 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="the_three_deserteers">
+  <meta name="apple-mobile-web-app-title" content="The Mαth∫etΣs">
   <link rel="apple-touch-icon" href="favicon.png">
 
   <!-- Favicon -->
@@ -35,7 +50,24 @@
   <link rel="manifest" href="manifest.json">
 </head>
 
-<body>
+<body id="body">
+  <div style="text-align:center;">
+    <canvas id="canvas" width="600" height="600" overflow="hidden"> </canvas>
+  </div>
+
+
+  <script src="https://unpkg.com/@rive-app/webgl"></script>
+  <script>
+    const r = new rive.Rive({
+      src: "loading.riv",
+      canvas: document.getElementById("canvas"),
+      autoplay: true
+    });
+    r.layout = new rive.Layout({
+      fit: rive.Fit.Contain,
+      alignment: rive.Alignment.BottomCenter
+    })
+  </script>
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";

@@ -29,7 +29,6 @@ class _ChallengeRiveAnimationState extends State<ChallengeRiveAnimation> {
       asset = 'assets/animations/shaky_vi_convo.riv';
     } else if (widget.theme == 2) {
       asset = 'assets/animations/cup_dize_convo.riv';
-      print(widget.animation);
     }
   }
 

@@ -1,11 +1,11 @@
 {
-    "name": "the_three_deserteers",
-    "short_name": "the_three_deserteers",
+    "name": "The Mαth∫etΣs",
+    "short_name": "The Mαth∫etΣs",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "The Three Deserteers is a fun slide puzzle game built by team Nisa for the flutter puzzle hack",
+    "description": "The Mαth∫etΣs is a fun slide puzzle game built by team Nisa for the flutter puzzle hack",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

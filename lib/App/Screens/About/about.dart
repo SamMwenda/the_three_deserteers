@@ -33,7 +33,7 @@ class AboutPage extends StatelessWidget {
                 ),
                 Padding(
                   padding:
-                      EdgeInsets.all(ScreenSize.height(10, context: context)),
+                      EdgeInsets.all(ScreenSize.height(30, context: context)),
                   child: Text("Game play",
                       style: TextStyle(
                           fontSize: ScreenSize.height(24, context: context),
@@ -41,57 +41,13 @@ class AboutPage extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           color: themeState.theme.foregoundColor)),
                 ),
-                Text(
-                    """The game has one simple objective, find the passkey to reveal your price. 
-For every challenge, you complete successfully you get to steal a key from one of the deserteers.
-Deserteers are key to the game and to have a successful run ensure you understand
-them, after all, you get to pick one of them to face a challenge. Some challenges may
-require a little more than understanding of the deserteers, don’t worry we have some
-hints to help you push through.""",
-                    style: TextStyle(
-                        fontSize: ScreenSize.height(18, context: context),
-                        fontFamily: 'Mali',
-                        fontWeight: FontWeight.w500,
-                        color: themeState.theme.foregoundColor)),
                 Padding(
-                  padding:
-                      EdgeInsets.all(ScreenSize.height(10, context: context)),
-                  child: Text("Hints",
-                      style: TextStyle(
-                          fontSize: ScreenSize.height(24, context: context),
-                          fontFamily: 'Mali',
-                          fontWeight: FontWeight.w500,
-                          color: themeState.theme.foregoundColor)),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsets.all(ScreenSize.height(5, context: context)),
+                   padding:
+                      EdgeInsets.only(left:ScreenSize.width(200, context: context),
+                      right: ScreenSize.width(200, context: context)),
                   child: Text(
-                      """.Defiance - “shiva my love, let’s go back. Back to our place, the place we fell in love.
-                      sweet house no 2. Remember?”""",
-                      style: TextStyle(
-                          fontSize: ScreenSize.height(18, context: context),
-                          fontFamily: 'Mali',
-                          fontWeight: FontWeight.w500,
-                          color: themeState.theme.foregoundColor)),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsets.all(ScreenSize.height(5, context: context)),
-                  child: Text(
-                      """. The Storm - As they say when the clouds are forming, and the storm
-                       approaches, who better to walk with than a friend.""",
-                      style: TextStyle(
-                          fontSize: ScreenSize.height(18, context: context),
-                          fontFamily: 'Mali',
-                          fontWeight: FontWeight.w500,
-                          color: themeState.theme.foregoundColor)),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsets.all(ScreenSize.height(5, context: context)),
-                  child: Text(
-                      """. A time may come when you might need to undo your wrongs""",
+                      "Given an equation x = 88*467+60+67+08 and x = 41231, your objective is to arrange puzzle pieces in a way that returns the value of x. This can simply be done by arranging the order of the tiles as per the expression that is already equal to the value of x. Use one of the Mαth∫etΣs team members to help you out. Every member has a few simple abilities that may prove handy if you pick them. Some abilities though, increase the game’s difficulty.",
+                      textAlign:TextAlign.center,
                       style: TextStyle(
                           fontSize: ScreenSize.height(18, context: context),
                           fontFamily: 'Mali',

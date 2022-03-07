@@ -10,7 +10,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:rive/rive.dart';
 import 'package:state_groups/state_groups.dart';
-import 'package:the_three_deserteers/App/Screens/Challenge/Widgets/challenge_rive_animation.dart';
 
 import 'package:the_three_deserteers/App/app.dart';
 import 'package:the_three_deserteers/BLoc/bloc.dart';
@@ -44,8 +43,8 @@ void swapHoleWithRight(int holeIndex) => swap(holeIndex, holeIndex + 1);
 void swapHoleWithUp(int holeIndex) => swap(holeIndex, holeIndex - 4);
 void swapHoleWithDown(int holeIndex) => swap(holeIndex, holeIndex + 4);
 
-class ChallengeDetail extends StatefulWidget {
-  const ChallengeDetail({
+class Puzzle extends StatefulWidget {
+  const Puzzle({
     Key? key,
     AudioPlayerFactory? audioPlayer,
   })  : _audioPlayerFactory = audioPlayer ?? getAudioPlayer,
@@ -54,11 +53,11 @@ class ChallengeDetail extends StatefulWidget {
   final AudioPlayerFactory _audioPlayerFactory;
 
   @override
-  State<ChallengeDetail> createState() => _ChallengeDetailState();
+  State<Puzzle> createState() => _PuzzleState();
 }
 
-class _ChallengeDetailState extends SyncState<int, ChallengeDetail> {
-  _ChallengeDetailState() : super(mainGroup);
+class _PuzzleState extends SyncState<int, Puzzle> {
+  _PuzzleState() : super(mainGroup);
   AudioPlayer? _audioPlayerSlide;
   AudioPlayer? _audioPlayerSuccess;
   AudioPlayer? _audioPlayerSamNo;
@@ -141,6 +140,7 @@ class _ChallengeDetailState extends SyncState<int, ChallengeDetail> {
     _audioPlayerWin?.dispose();
     _audioPlayerFail?.dispose();
     _audioPlayer?.dispose();
+    puzzlePieces.clear();
     super.dispose();
   }
 
@@ -255,21 +255,20 @@ class _ChallengeDetailState extends SyncState<int, ChallengeDetail> {
         swapHoleWithDown(holeIndex);
       }
     }
-    setState(() {
-      _audioPlayer = _audioPlayerSuccess;
 
-      _audioPlayer?.play();
+    _audioPlayer = _audioPlayerSuccess;
 
-      expression = model.MathProblem.expression();
-      Expression exp = Expression(expression);
-      answerExpression = exp.eval()!.ceil(scale: 1).toString();
-      Expression exp1 = Expression(newExpression());
-      try {
-        answerNewExpression = exp1.eval()!.ceil(scale: 1).toString();
-      } catch (e) {
-        answerNewExpression = "Error!";
-      }
-    });
+    _audioPlayer?.play();
+
+    expression = model.MathProblem.expression();
+    Expression exp = Expression(expression);
+    answerExpression = exp.eval()!.ceil(scale: 1).toString();
+    Expression exp1 = Expression(newExpression());
+    try {
+      answerNewExpression = exp1.eval()!.ceil(scale: 1).toString();
+    } catch (e) {
+      answerNewExpression = "Error!";
+    }
   }
 
   String newExpression() {
@@ -631,12 +630,14 @@ class _ChallengeDetailState extends SyncState<int, ChallengeDetail> {
                   if (!showTileForVi &&
                       (themeState.theme.character == 0 ||
                           themeState.theme.character == 2)) {
-                    return _buttonImage("tile_order", "assets/images/tile_order.png");
+                    return _buttonImage(
+                        "tile_order", "assets/images/tile_order.png");
                   } else if (showTileForVi) {
                     return _buttonImage(
                         "tile_order", "assets/images/btn_expression.png");
                   } else {
-                    return _buttonImage("tile_order", "assets/images/tile_order.png");
+                    return _buttonImage(
+                        "tile_order", "assets/images/tile_order.png");
                   }
                 }),
               ],
