@@ -151,6 +151,7 @@ class _AppState extends State<App> {
         BlocProvider(
           create: (context) => RouteBloc(pages: const [
             HomePage(),
+            //
             AboutPage(),
           ]),
         ),
